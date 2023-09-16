@@ -35,13 +35,13 @@ export default function ProductForm() {
         <label htmlFor='input-name' className='text-white w-24'>
           Name
         </label>
-        <input id="input-name" type="text" name="name" />
+        <input id="input-name" type="text" name="name" required />
       </div>
       <div className='flex gap-5'>
         <label htmlFor='input-price' className='text-white w-24'>
           Price
         </label>
-        <input id="input-price" type="number" name="price" />
+        <input id="input-price" type="number" name="price" required />
       </div>
       <button type="submit" className="text-gray-200 text-xl leading-6 hover:bg-gray-900 cursor-pointer px-4 py-2 border border-gray-100 rounded-lg">Save</button>
     </form>

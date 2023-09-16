@@ -5,7 +5,7 @@ import ProductForm from "./ProductForm";
 async function getProducts(): Promise<Product[] | undefined> {
   const response = await fetch('https://6505dd7cef808d3c66f09010.mockapi.io/products',
     {
-      cache: "no-cache",
+      cache: "default",
       next: {
         tags: ["products"]
       }
